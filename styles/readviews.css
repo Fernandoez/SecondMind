@@ -1,0 +1,79 @@
+body div.container div.main-content{
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+body div.container div.main-content p{
+    padding: 1rem 2rem;
+}
+
+body div.container div.main-content div.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body div.container div.main-content div.image img{
+    height: auto;
+    max-width: 98.5%;
+    width: auto;
+}
+
+body div.container div.main-content div.contact-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+body div.container div.main-content div.contact-button a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    height: 4rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    transition: 0.8ms;
+}
+
+body div.container div.main-content div.contact-button a:hover{
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+}
+
+#divMobile{
+    display: flex;
+    align-items: center;
+}
+
+#divMobile #imageMobile img{
+    height: auto;
+    max-width: 98.5%;
+    width: auto;
+}
+
+@media (max-width: 700px){
+    #divMobile{
+        display: inline;
+    }
+
+    #imageMobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #divMobile #imageMobile img{
+        padding-top: 1rem;
+        max-width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
